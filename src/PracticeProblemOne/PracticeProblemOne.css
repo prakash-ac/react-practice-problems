@@ -1,0 +1,47 @@
+.PracticeProblemOne{
+    color: rgb(70, 62, 62);
+    border: 1px solid rgb(184, 184, 182);
+    box-shadow: rgba(107, 64, 8, 0.747);
+    padding: 20px;
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.Button{
+    background-color: rgb(203, 206, 203);
+    padding: 5px;
+    margin-left: 10px;
+    border-color: rgb(194, 209, 194);
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 2px #999;
+}
+
+.Input-number{
+    background-color: rgb(203, 206, 203);
+    padding: 5px;
+    margin-left: 10px;
+    border-color: rgb(194, 209, 194);
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 2px #999;
+    width: 50px
+}
+
+
+@media (min-width: 500px){
+    .PracticeProblemOne{
+        width: 450px;
+    }
+}
+
+.Button:hover{
+    border-color: gainsboro;
+}
+
+.h4-Red{
+    color: red;
+}
