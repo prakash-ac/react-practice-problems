@@ -11,7 +11,7 @@ class PracticeProblemTwo extends Component{
     }
 
     deleteItem = (index) => {
-        
+
        const newToDoList = this.state.todoList.filter(item =>{
             return this.state.todoList[index] !== item;
         })
@@ -44,7 +44,7 @@ class PracticeProblemTwo extends Component{
                 <ToDoItem 
                     title={todoItem.title}
                     date={todoItem.date}
-                    key={todoItem.item + todoItem.date}
+                    key={todoItem.title + todoItem.date}
                     done={()=>this.deleteItem(index)}
                 />
             )
@@ -58,7 +58,7 @@ class PracticeProblemTwo extends Component{
                     <input 
                         className={classes.TextField} 
                         type="text" 
-                        placeholder="Create new task..." 
+                        placeholder="Enter a task..." 
                         onChange={this.processInput}
                     />
                     <input 

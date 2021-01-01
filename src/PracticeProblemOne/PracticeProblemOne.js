@@ -23,16 +23,22 @@ class PracticeProblemOne extends Component{
     }
 
     changeOffset = (e) => {
-        const newOffset = parseInt(e.target.value);
+        let newOffset;
+        if(e.target.value !== ''){
+            newOffset = e.target.value;
+        } else{
+            newOffset = 1;
+        }
+
         this.setState({
             offset: newOffset,
-        })
+        });
     }
 
     render(){
         let h4 = '';
         if(this.state.value < 0){
-            h4 += 'h4-Red';
+            h4 = classes.h4_Red;
         }
 
         return(
