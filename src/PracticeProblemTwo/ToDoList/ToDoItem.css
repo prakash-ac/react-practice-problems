@@ -1,0 +1,25 @@
+.ToDoItem {
+    background-color:white;
+    border-bottom: 1px solid #e7e7e7;
+    height: 25px;
+    margin: auto;
+
+}
+.Item{
+    margin-top: 3px;
+    text-align: left;
+    padding-top: 2px;
+
+}
+
+.ToDoItem:nth-child(even) { background-color: #f7f7f7; }
+
+.Date, .Button, .Task{
+    margin-left: 20px;
+}
+
+/* .Button{
+    float: right;
+    margin-right: 10px;
+} */
+

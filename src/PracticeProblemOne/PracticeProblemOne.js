@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './PracticeProblemOne.css';
+import classes from './PracticeProblemOne.css';
 
 class PracticeProblemOne extends Component{
 
@@ -36,21 +36,21 @@ class PracticeProblemOne extends Component{
         }
 
         return(
-            <div className="PracticeProblemOne">
+            <div className={classes.PracticeProblemOne}>
                 <h4>Practice Problem 1</h4>
                 <h4 className={h4}>Count: {this.state.value} </h4>
                 <button 
                     onClick={this.increaseCounter}
-                    className="Button">Increment
+                    className={classes.Button}>Increment
                 </button>
 
                 <button 
                     onClick={this.decreaseCounter}
-                    className="Button">Decrement
+                    className={classes.Button}>Decrement
                 </button>
                 
                 <input 
-                    className="Input-number" 
+                    className={classes.Input_number}
                     type="number" 
                     onChange={this.changeOffset}
                     placeholder="offset"

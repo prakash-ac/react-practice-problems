@@ -16,18 +16,21 @@
 // If Offset = 5, counter will increment/decrement by 5. 
 
 import React, { Component } from 'react';
-import './App.css';
+import classes from './App.css';
 import PracticeProblemOne from './PracticeProblemOne/PracticeProblemOne';
+import PracticeProblemTwo from './PracticeProblemTwo/PracticeProblemTwo';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App_header">
-          <h1 className="App_title">Practice Problems</h1>
+      <div className={classes.App}>
+        <header className={classes.App_header}>
+          <h1 className={classes.App_title}>Practice Problems</h1>
         </header>
 
         <PracticeProblemOne />
+
+        <PracticeProblemTwo />
       </div>
     );
   }

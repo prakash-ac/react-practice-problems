@@ -20,8 +20,8 @@
     box-shadow: 0 2px #999;
 }
 
-.Input-number{
-    background-color: rgb(203, 206, 203);
+.Input_number{
+    background-color: white;
     padding: 5px;
     margin-left: 10px;
     border-color: rgb(194, 209, 194);
