@@ -1,9 +1,12 @@
-.PracticeProblemOne{
-    color: rgb(70, 62, 62);
-    border: 1px solid rgb(184, 184, 182);
-    box-shadow: rgba(107, 64, 8, 0.747);
-    padding: 20px;
-    width: max-content;
+.Counter{
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow:2px 2px 3px #ccc;;
+    width: 75%;
+    padding-bottom: 20px;
     height: max-content;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +27,7 @@
     background-color: white;
     padding: 5px;
     margin-left: 10px;
-    border-color: rgb(194, 209, 194);
+    border-color: rgb(136, 170, 136);
     cursor: pointer;
     border-radius: 2px;
     box-shadow: 0 2px #999;
@@ -32,11 +35,11 @@
 }
 
 
-@media (min-width: 500px){
+/* @media (min-width: 500px){
     .PracticeProblemOne{
         width: 450px;
     }
-}
+} */
 
 .Button:hover{
     border-color: gainsboro;

@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
-import classes from './PracticeProblemTwo.css';
-import ToDoItem from './ToDoList/ToDoItem';
+import classes from './ToDoList.css';
+import ToDoItem from './ToDoItem/ToDoItem';
 
-class PracticeProblemTwo extends Component{
+class ToDoList extends Component{
     
     state = {
         taskTitle: '',
@@ -10,12 +10,17 @@ class PracticeProblemTwo extends Component{
         todoList: [],
     }
 
-    deleteItem = (index) => {
+    sleep = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
 
+    async deleteItem(index){
        const newToDoList = this.state.todoList.filter(item =>{
             return this.state.todoList[index] !== item;
         })
 
+        // wait few milliseconds so users can see the task selected to delete
+        await this.sleep(300);
         this.setState({todoList: newToDoList});
     };
 
@@ -52,8 +57,8 @@ class PracticeProblemTwo extends Component{
 
         )
         return (
-            <div className={classes.PracticeProblemTwo}>
-                <h4>Practice Problem 2</h4>
+            <div className={classes.ToDoList}>
+                <h4>Practice Problem 2 (To-do List)</h4>
                 <div className={classes.Input}>
                     <input 
                         className={classes.TextField} 
@@ -73,7 +78,7 @@ class PracticeProblemTwo extends Component{
                 </div><br/>
 
                 <h3 className={classes.All_tasks}>All Tasks</h3>
-                <div className={classes.ToDoList}>
+                <div className={classes.ToDo_List}>
                     {todoListComponents}
                 </div>
             </div>
@@ -81,4 +86,4 @@ class PracticeProblemTwo extends Component{
     }
 }
 
-export default PracticeProblemTwo;
+export default ToDoList;

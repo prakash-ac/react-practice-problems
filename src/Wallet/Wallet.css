@@ -1,0 +1,61 @@
+.Wallet{
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    background-color: white;
+    box-sizing: content-box;
+    box-shadow:2px 2px 3px #ccc;;
+    padding: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.Income {
+    /* padding: 20px; */
+    background-color: rgb(43, 131, 43);;
+}
+
+.Expenses {
+    background-color: #c2443f;
+    margin-top: 10px;
+}
+
+.Income, .Expenses{
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    height: 15px;
+}
+
+.IncomeText, .ExpensesText{
+    float: left;
+    font-size: 13px;
+    color: #e7e7e7;
+}
+
+.Clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Top{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url(../assets/romania-fiscal-law.jpg);
+    padding: 30px;
+    background-size: cover;
+    position: relative;
+}
+
+.Right{
+    float: right;
+}
+
+.Bottom{
+   height: max-content;
+}
+

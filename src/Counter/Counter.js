@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import classes from './PracticeProblemOne.css';
+import classes from './Counter.css';
 
-class PracticeProblemOne extends Component{
+class Counter extends Component{
 
     state = {
         value: 0,
@@ -42,8 +42,8 @@ class PracticeProblemOne extends Component{
         }
 
         return(
-            <div className={classes.PracticeProblemOne}>
-                <h4>Practice Problem 1</h4>
+            <div className={classes.Counter}>
+                <h4>Practice Problem 1 (Counter)</h4>
                 <h4 className={h4}>Count: {this.state.value} </h4>
                 <button 
                     onClick={this.increaseCounter}
@@ -66,4 +66,4 @@ class PracticeProblemOne extends Component{
     }
 }
 
-export default PracticeProblemOne;
+export default Counter;

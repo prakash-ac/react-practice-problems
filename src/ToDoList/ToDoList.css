@@ -1,13 +1,16 @@
-.PracticeProblemTwo{
-    color: rgb(70, 62, 62);
-    border: 1px solid rgb(184, 184, 182);
-    box-shadow: rgba(107, 64, 8, 0.747);
-    padding: 20px;
-    width: max-content;
+.ToDoList{
+    color: black;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow:2px 2px 3px #ccc;;
+    padding: 5px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     overflow: scroll;
+    border-radius: 0.3rem;
 }
 
 .Button{
@@ -30,7 +33,7 @@
     float: left;
 }
 
-.ToDoList{
+.ToDo_List{
     margin-top: 10px;
 }
 

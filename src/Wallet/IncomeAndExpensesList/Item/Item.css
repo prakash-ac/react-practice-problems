@@ -1,0 +1,35 @@
+.Item{
+    width: 100%;
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+    color: rgb(41, 38, 36);
+    height: 15px;
+    width: 30vh;
+    margin: 60px, auto;
+}
+
+.ItemDescription{
+    float: left;
+}
+
+.ItemValue{
+    float: right;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.Item:first-child { border-top: 1px solid #e7e7e7; }
+.Item:nth-child(even) { background-color: #f7f7f7; }
+
+.Button{
+    float: right;
+    cursor: pointer;
+    color: rgb(238, 177, 177);
+}
+
+.Item:hover .ItemValue{
+    transform: translateX(-30px);
+}
+
+
+

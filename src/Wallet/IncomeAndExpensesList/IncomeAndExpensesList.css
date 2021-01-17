@@ -1,0 +1,25 @@
+.IncomeAndExpensesList{
+    margin: 60px auto;
+}
+
+.IncomeListTitle { color: rgb(36, 117, 36); float: left;}
+.ExpensesListTitle { color: #FF5049; float: left; display: flex;}
+
+.IncomeList{
+    margin-left: 20px;
+    float: left;
+    width: 50%;
+    margin-right: 30px;
+}
+
+.ExpensesList{
+    float: left;
+    width: 45%;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}

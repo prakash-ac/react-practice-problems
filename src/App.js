@@ -17,8 +17,10 @@
 
 import React, { Component } from 'react';
 import classes from './App.css';
-import PracticeProblemOne from './PracticeProblemOne/PracticeProblemOne';
-import PracticeProblemTwo from './PracticeProblemTwo/PracticeProblemTwo';
+import Counter from './Counter/Counter';
+import ToDoList from './ToDoList/ToDoList';
+import Wallet from './Wallet/Wallet';
+import Form from './Form/Form';
 
 class App extends Component {
   render() {
@@ -27,10 +29,13 @@ class App extends Component {
         <header className={classes.App_header}>
           <h1 className={classes.App_title}>Practice Problems</h1>
         </header>
+        <Form/>
+        
+        <Counter />
 
-        <PracticeProblemOne />
+        <ToDoList />
 
-        <PracticeProblemTwo />
+        <Wallet/>
       </div>
     );
   }
